@@ -61,7 +61,7 @@ nav {
   text-decoration: none;
   color: var(--text-mid);
   font-size: 1.2rem;
-  font-weight: 600;
+  
 }
 
 .nav-links a:hover {
@@ -187,7 +187,7 @@ flex:1;
 .card p {
   font-size: 1.4rem;
   color: var(--text-mid);
-  line-height: 1.4;
+  line-height: 1.2;
   max-width: 18rem;
 }
 
