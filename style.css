@@ -74,13 +74,22 @@ nav {
 
 .dropdown > a {
   position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 
 .dropdown > a::after {
-  content: '▾';
+  content: '<';
   margin-left: 8px;
-  font-size: 0.75rem;
+  transform: rotate(-90deg);
+  font-size: 1.2rem;
   color: var(--text-mid);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.dropdown:hover > a::after,
+.dropdown > a:hover::after {
+  transform: rotate(90deg);
 }
 
 .dropdown-menu {
@@ -185,9 +194,9 @@ flex:1;
 }
 
 .card p {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--text-mid);
-  line-height: 1.2;
+  line-height: 1.5;
   max-width: 18rem;
 }
 
